@@ -1,6 +1,8 @@
 /* Set the base font for the document */
 html {
-  font-family: sans-serif;
+    font-family: "Zen Dots";
+    src: url("./fonts/ZenDots-Regular.ttf") format("truetype");
+    font-style: normal;
 }
 
 /* Style the main table: border, spacing, and font size */
@@ -40,4 +42,27 @@ tr:nth-child(odd) td {
 /* Style the table caption */
 caption {
   padding: 10px;
+}
+
+/* Footer */
+footer {
+  color: black;
+  position: static;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-size: 16px;
+  margin-top: 40px;
+  margin-bottom: 0px;
+  text-align: center;
+  text-shadow: 4px 4px 20px darkblue;
+  z-index: 10;
+  background: transparent;
+  padding-bottom: 0;
+  max-height: none;
+  overflow: visible;
+  display: block;
+  clear: both;
+  flex-shrink: 0;
+  box-sizing: border-box;
 }
