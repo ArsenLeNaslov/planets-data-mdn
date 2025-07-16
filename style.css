@@ -1,42 +1,60 @@
-/* Set the base font for the document */
+/* Set the base font and background for the document */
 html {
     font-family: "Zen Dots";
     src: url("./fonts/ZenDots-Regular.ttf") format("truetype");
     font-style: normal;
+    background-image: url("img/space-background.jpg");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
-/* Style the main table: border, spacing, and font size */
+/* Hyperlink color rules*/
+a,
+a:active { color: yellow; }
+a:hover { color: cyan; }
+
+h1 {
+  font-optical-sizing: auto;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: yellow;
+  text-shadow: 4px 4px 10px cyan;
+}
+
+/* Style the main table: border, spacing, font size, transparent background, and cyan text */
 table {
   border-collapse: collapse;
-  border: 2px solid rgb(200,200,200);
+  border: 5px solid orange;
+  box-shadow: 0 0 30px cyan;
   letter-spacing: 1px;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
+  background: transparent;
+  color: cyan;
+
 }
 
-/* Style table cells and headers: border and padding */
+/* Style table cells and headers: border, padding, and text */
 td, th {
-  border: 1px solid rgb(190,190,190);
+  border: 3px solid orange;
   padding: 10px 20px;
+  color: cyan;
 }
 
-/* Style table headers: background color */
+/* Style table headers: transparent background and text */
 th {
-  background-color: rgb(235,235,235);
+  background: transparent;
+  color: blue;
 }
 
 /* Center text in table cells */
 td {
   text-align: center;
-}
-
-/* Alternate row coloring for even rows */
-tr:nth-child(even) td {
-  background-color: rgb(250,250,250);
-}
-
-/* Alternate row coloring for odd rows */
-tr:nth-child(odd) td {
-  background-color: rgb(245,245,245);
 }
 
 /* Style the table caption */
@@ -46,7 +64,7 @@ caption {
 
 /* Footer */
 footer {
-  color: black;
+  color: cyan;
   position: static;
   left: 0;
   bottom: 0;
@@ -65,4 +83,77 @@ footer {
   clear: both;
   flex-shrink: 0;
   box-sizing: border-box;
+}
+
+/* Background Music Button */
+#toggle-music {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  bottom: 2vh;
+  right: 2vw;
+  width: 60px;
+  height: 60px;
+  margin: 0.5em;
+  background-color: rgba(139, 0, 139, 0);
+  border-radius: 50%;
+  border: 4px solid rgb(19, 155, 233);
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+}
+
+#toggle-music:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+  filter: drop-shadow(0 0 0.75rem darkorange) drop-shadow(0 0 0.75em darkblue);
+  transition: 0.3s;
+}
+
+/* Ensures elements adjust based on screen width */
+@media (max-width: 900px) {
+    footer {
+        position: static;
+        bottom: 0;
+        height: auto;
+        padding: 10px 0 2em 0;
+        max-height: none;
+        overflow: visible;
+        display: block;
+        clear: both;
+        flex-shrink: 0;
+        box-sizing: border-box;
+    }
+}
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 600px) {
+  button {
+    font-size: 6vw;
+    width: 16vw;
+    height: 16vw;
+    min-width: 44px;
+    min-height: 44px;
+    padding: 0;
+    border-radius: 8px;
+  }
+
+  .title {
+    font-size: 7vw;
+    margin-bottom: 4vw;
+  }
+  footer {
+    font-size: 3vw;
+    padding: 2vw 0 2vw 0;
+  }
+  #toggle-music {
+    width: 14vw;
+    height: 14vw;
+    font-size: 7vw;
+    min-width: 44px;
+    min-height: 44px;
+    bottom: 2vw;
+    right: 2vw;
+  }
 }
