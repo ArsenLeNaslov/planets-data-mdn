@@ -1,3 +1,11 @@
+/* Main content container for full viewport coverage and background visibility */
+.main-content {
+  min-height: 100vh;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 /* 1. Set the base font and background for the document */
 html {
     font-family: "Zen Dots";
