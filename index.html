@@ -6,17 +6,18 @@
     <link href="style.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet"/>
     <link rel="icon" type="image/png" href="img/solar-system-fav.png">
-    <audio id="bg-music" src="audio/" loop autoplay></audio>
+    <audio id="bg-music" src="audio/space.mp3" loop autoplay></audio>
+    <script src="./javascript.js" defer></script>
     <title>Tabula Datorum Planetarum Systematis Solaris</title>
   </head>
   <body>
     <h1>Tabula Datorum Planetarum Systematis Solaris</h1>
 
     <table>
-        <caption>Data about the Planets of our Solar System (Planetary data taken from <a href="https://nssdc.gsfc.nasa.gov/planetary/factsheet/">Nasa's Planetary Fact Sheet - Metric</a>.</caption>
+        <caption>Data about the Planets of our Solar System (Planetary data taken from <a href="https://nssdc.gsfc.nasa.gov/planetary/factsheet/" target="_blank" rel="noopener noreferrer">Nasa's Planetary Fact Sheet - Metric</a></caption>
             <colgroup>
                 <col span="2">
-                <col style="border: 3px solid orange;">
+                <col style="border: 5px solid purple">
                 <col span="9">
             </colgroup>
         <thead> <!-- Column Headers -->
@@ -151,12 +152,14 @@
         </tbody>
     </table>
 
+    <button id="toggle-music" aria-label="Toggle Music" title="Toggle Background Music">🌚</button>
+
     <footer class="footer">
         <p>Created by <a href="https://github.com/ArsenLeNaslov" target="_blank" rel="noopener noreferrer">ArsenLeNaslov</a> for The Odin Project 🎴 </p>
-        <p>Favicon by <a href="https://www.flaticon.com/free-icons/solar-system" title="solar system icon" target="_blank" rel="noopener noreferrer"></a> Solar System icon created by Freepik @ Flaticon, creative common license</p>
+        <p>Favicon "Solar System" <a href="https://www.flaticon.com/free-icons/solar-system" title="solar system icon" target="_blank" rel="noopener noreferrer">@ Flaticon</a>, creative common license</p>
         <p><a href="" title="solar system animated icons"></a>Solar System animated icon created by Freepik @ Flaticon, all right reserved</p>
-        <p>Background by <a href="" target="_blank" rel="noopener noreferrer"> @ </a>, free for use under the website content license</p>
-        <p>Music "" <a href="" target="_blank" rel="noopener noreferrer"> @ </a>, royalty free music</p>
+        <p>Background <a href="https://wallpaperaccess.com/space" target="_blank" rel="noopener noreferrer">@ WallpaperAccess</a>, free for use under the website content license</p>
+        <p>Music "Space" by The_Mountain/Dmitrii Kolesnikov <a href="" target="_blank" rel="noopener noreferrer">@Pixabay</a>, royalty free music</p>
     </footer>
 
   </body>
