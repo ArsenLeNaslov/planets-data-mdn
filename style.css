@@ -3,18 +3,19 @@ html {
     font-family: "Zen Dots";
     src: url("./fonts/ZenDots-Regular.ttf") format("truetype");
     font-style: normal;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: auto;
     background-image: url("/planets-data-mdn/img/space-background.jpg");
     background-color: black;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
-    overflow-x: auto;
-    overflow-y: auto;
-}
-
-body {
-    overflow-x: auto;
 }
 
 /* 2. Hyperlink color rules */
