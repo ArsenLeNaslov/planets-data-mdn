@@ -4,7 +4,7 @@ html {
     src: url("./fonts/ZenDots-Regular.ttf") format("truetype");
     font-style: normal;
     background-image: url("/planets-data-mdn/img/space-background.jpg");
-    background-color: transparent;
+    background-color: black;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
