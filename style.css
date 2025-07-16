@@ -3,7 +3,7 @@ html {
     font-family: "Zen Dots";
     src: url("./fonts/ZenDots-Regular.ttf") format("truetype");
     font-style: normal;
-    background-image: url("/img/space-background.jpg");
+    background-image: url("img/space-background.jpg");
     background-color: black;
     background-repeat: no-repeat;
     background-position: center center;
