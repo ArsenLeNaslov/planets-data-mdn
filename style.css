@@ -1,4 +1,4 @@
-/* Set the base font and background for the document */
+/* 1. Set the base font and background for the document */
 html {
     font-family: "Zen Dots";
     src: url("./fonts/ZenDots-Regular.ttf") format("truetype");
@@ -9,14 +9,29 @@ html {
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
-    overflow-x: hidden;
+    overflow-x: auto;
     overflow-y: auto;
 }
 
-/* Hyperlink color rules*/
+body {
+    overflow-x: auto;
+}
+
+/* 2. Hyperlink color rules */
 a,
 a:active { color: yellow; }
 a:hover { color: cyan; }
+
+/* 3. Style for the Title, Table and its Text */
+table {
+  border-collapse: collapse;
+  border: 5px solid orange;
+  box-shadow: 0 0 30px cyan;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  background: transparent;
+  color: cyan;
+}
 
 h1 {
   font-optical-sizing: auto;
@@ -27,42 +42,30 @@ h1 {
   text-shadow: 4px 4px 10px cyan;
 }
 
-/* Style the main table: border, spacing, font size, transparent background, and cyan text */
-table {
-  border-collapse: collapse;
-  border: 5px solid orange;
-  box-shadow: 0 0 30px cyan;
-  letter-spacing: 1px;
-  font-size: 0.9rem;
-  background: transparent;
-  color: cyan;
-
-}
-
-/* Style table cells and headers: border, padding, and text */
+/* 4. Style Table Cells and Headers */
 td, th {
   border: 3px solid orange;
   padding: 10px 20px;
   color: cyan;
 }
 
-/* Style table headers: transparent background and text */
+/* 5. Style Table Headers */
 th {
   background: transparent;
   color: blue;
 }
 
-/* Center text in table cells */
+/* 6. Center text in Table Cells */
 td {
   text-align: center;
 }
 
-/* Style the table caption */
+/* 7. Style the Table Caption */
 caption {
   padding: 10px;
 }
 
-/* Footer */
+/* 8. Footer */
 footer {
   color: cyan;
   position: static;
@@ -85,7 +88,7 @@ footer {
   box-sizing: border-box;
 }
 
-/* Background Music Button */
+/* 9. Background Music Button */
 #toggle-music {
   display: flex;
   position: fixed;
@@ -111,7 +114,7 @@ footer {
   transition: 0.3s;
 }
 
-/* Ensures elements adjust based on screen width */
+/* 10. Ensures elements adjust based on screen width */
 @media (max-width: 900px) {
     footer {
         position: static;
@@ -127,7 +130,8 @@ footer {
     }
 }
 
-/* Responsive adjustments for mobile devices */
+/* 11. Responsive adjustments for mobile devices */
+/* Table horizontal scroll is handled by .table-container */
 @media (max-width: 600px) {
   button {
     font-size: 6vw;
@@ -156,4 +160,29 @@ footer {
     bottom: 2vw;
     right: 2vw;
   }
+
+}
+
+/* 12. Orientation-specific adjustments for Table and H1 */
+@media (orientation: portrait) {
+  table { font-size: 0.8rem; }
+  h1 { font-size: 3vw; }
+}
+
+@media (orientation: landscape) {
+  table { font-size: 1rem; }
+  h1 { font-size: 3vw; }
+}
+
+/* 13. Table container for horizontal scrolling on small screens */
+.table-container {
+  width: 100vw;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* 14. Flexible images and tables */
+img, table {
+  max-width: 100%;
+  height: auto;
 }
