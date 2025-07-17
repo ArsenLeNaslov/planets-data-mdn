@@ -182,9 +182,10 @@ footer {
   width: 100vw;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-  box-sizing: border-box;
+  box-sizing: content-box;
   margin: 0 auto;
-  padding: 0;
+  padding-right: 16px;
+  padding-left: 0;
   scrollbar-width: thin;
   scrollbar-color: orange cyan;
 }
