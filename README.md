@@ -14,5 +14,6 @@ A galaxy-themed data table built with HTML, CSS, and JavaScript. This exercise i
 
 https://arsenlenaslov.github.io/planets-data-mdn/
 
-<img width="1915" height="917" alt="image" src="https://github.com/user-attachments/assets/025692e4-2eae-43fc-9c65-be5c0b1cf397" />
+<img width="1896" height="906" alt="image" src="https://github.com/user-attachments/assets/a0631e6c-298a-4f4e-8a3f-12107c0a38ab" />
+
 
