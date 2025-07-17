@@ -154,18 +154,24 @@ footer {
     text-align: center;
     width: 100%;
   }
+  .main-content {
+    width: 100vw;
+  }
   h1 {
     font-size: 8vw;
     margin: 8vw 0 4vw 0;
     text-align: center;
-    width: 100%;
+    width: 100vw;
+    left: 0;
+    right: 0;
   }
   footer {
     font-size: 3vw;
     padding: 2vw 0 2vw 0;
     text-align: center;
-    width: 100%;
-    align-self: center;
+    width: 100vw;
+    left: 0;
+    right: 0;
   }
   #toggle-music {
     width: 14vw;
