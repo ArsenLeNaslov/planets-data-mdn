@@ -182,15 +182,19 @@ footer {
   width: 100vw;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+  box-sizing: content-box;
   box-sizing: border-box;
   margin: 0 auto;
+  padding-right: 16px;
+  padding-left: 0;
   padding: 0;
   scrollbar-width: thin;
   scrollbar-color: orange cyan;
 }
 
 /* 14. Flexible images and tables */
-img, table {
+img {
   max-width: 100%;
   height: auto;
+}
 }
