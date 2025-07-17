@@ -179,7 +179,7 @@ footer {
 
 /* 13. Table container for horizontal scrolling on small screens */
 .table-container {
-  width: 100vw;
+  max-width: calc(100vw - 16px); /* rough scrollbar width */
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   box-sizing: content-box;
