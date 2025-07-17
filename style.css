@@ -149,7 +149,7 @@ footer {
     font-size: 7vw;
     margin-bottom: 4vw;
   }
-  
+
   footer {
     font-size: 3vw;
     padding: 2vw 0 2vw 0;
@@ -188,3 +188,4 @@ footer {
 img, table {
   max-width: 100%;
   height: auto;
+}
