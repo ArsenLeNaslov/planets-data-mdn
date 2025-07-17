@@ -4,7 +4,8 @@
   background: transparent;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: flex-start;
 }
 /* 1. Set the base font and background for the document */
 html {
@@ -44,11 +45,12 @@ table {
 
 h1 {
   font-optical-sizing: auto;
-  font-size: 50px;
+  font-size: 7vw;
   text-align: center;
-  margin-bottom: 40px;
+  margin: 40px 0 20px 0;
   color: yellow;
   text-shadow: 4px 4px 10px cyan;
+  width: 100%;
 }
 
 /* 4. Style Table Cells and Headers */
@@ -77,24 +79,18 @@ caption {
 /* 8. Footer */
 footer {
   color: cyan;
-  position: static;
-  left: 0;
-  bottom: 0;
   width: 100%;
   font-size: 16px;
   margin-top: 40px;
   margin-bottom: 0px;
   text-align: center;
   text-shadow: 4px 4px 20px darkblue;
-  z-index: 10;
   background: transparent;
   padding-bottom: 0;
   max-height: none;
   overflow: visible;
-  display: block;
-  clear: both;
-  flex-shrink: 0;
   box-sizing: border-box;
+  align-self: center;
 }
 
 /* 9. Background Music Button */
@@ -153,12 +149,23 @@ footer {
   }
 
   .title {
-    font-size: 7vw;
+    font-size: 8vw;
     margin-bottom: 4vw;
+    text-align: center;
+    width: 100%;
+  }
+  h1 {
+    font-size: 8vw;
+    margin: 8vw 0 4vw 0;
+    text-align: center;
+    width: 100%;
   }
   footer {
     font-size: 3vw;
     padding: 2vw 0 2vw 0;
+    text-align: center;
+    width: 100%;
+    align-self: center;
   }
   #toggle-music {
     width: 14vw;
