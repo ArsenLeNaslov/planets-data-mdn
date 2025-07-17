@@ -149,7 +149,7 @@ footer {
     font-size: 7vw;
     margin-bottom: 4vw;
   }
-
+  
   footer {
     font-size: 3vw;
     padding: 2vw 0 2vw 0;
@@ -182,10 +182,16 @@ footer {
   width: 100vw;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  scrollbar-width: thin;
+  scrollbar-color: orange cyan;
 }
 
 /* 14. Flexible images and tables */
 img, table {
-  max-width: 100%;
+  min-width: 1200px;
+  width: auto;
   height: auto;
 }
