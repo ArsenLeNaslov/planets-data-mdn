@@ -128,64 +128,7 @@ footer {
 }
 
 /* 10. Ensures elements adjust based on screen width */
-@media (max-width: 900px) {
-    footer {
-        position: static;
-        bottom: 0;
-        height: auto;
-        padding: 10px 0 2em 0;
-        max-height: none;
-        overflow: visible;
-        display: block;
-        clear: both;
-        flex-shrink: 0;
-        box-sizing: border-box;
-    }
-}
-
-/* 11. Responsive adjustments for mobile devices */
-/* Table horizontal scroll is handled by .table-container */
-@media (max-width: 600px) {
-  button {
-    font-size: 6vw;
-    width: 16vw;
-    height: 16vw;
-    min-width: 44px;
-    min-height: 44px;
-    padding: 0;
-    border-radius: 8px;
-  }
-
-  .title {
-    font-size: 7vw;
-    margin-bottom: 4vw;
-  }
-  footer {
-    font-size: 3vw;
-    padding: 2vw 0 2vw 0;
-  }
-  #toggle-music {
-    width: 14vw;
-    height: 14vw;
-    font-size: 7vw;
-    min-width: 44px;
-    min-height: 44px;
-    bottom: 2vw;
-    right: 2vw;
-  }
-
-}
-
-/* 12. Orientation-specific adjustments for Table and H1 */
-@media (orientation: portrait) {
-  table { font-size: 0.8rem; }
-  h1 { font-size: 3vw; }
-}
-
-@media (orientation: landscape) {
-  table { font-size: 1rem; }
-  h1 { font-size: 3vw; }
-}
+/* All devices use desktop layout, no mobile overrides. */
 
 /* 13. Table container for horizontal scrolling on small screens */
 .table-container {
