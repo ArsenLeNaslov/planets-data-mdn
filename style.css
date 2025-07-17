@@ -11,13 +11,15 @@ html {
     font-family: "Zen Dots";
     src: url("./fonts/ZenDots-Regular.ttf") format("truetype");
     font-style: normal;
-    overflow-x: auto;
+    box-sizing: border-box;
+    overflow-x: hidden;
     overflow-y: auto;
 }
 
 body {
     min-height: 100vh;
-    overflow-x: auto;
+    box-sizing: border-box;
+    overflow-x: hidden;
     background-image: url("/planets-data-mdn/img/space-background.jpg");
     background-color: black;
     background-repeat: no-repeat;
@@ -40,6 +42,8 @@ table {
   font-size: 0.9rem;
   background: transparent;
   color: cyan;
+  margin: 0 auto;
+  width: 100%;
 }
 
 h1 {
@@ -186,8 +190,13 @@ footer {
 /* 13. Table container for horizontal scrolling on small screens */
 .table-container {
   width: 100vw;
+  max-width: 100vw;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+  box-sizing: border-box;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  margin: 0 auto;
 }
 
 /* 14. Flexible images and tables */
